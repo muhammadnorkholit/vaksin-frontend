@@ -1,7 +1,114 @@
-[
+{
+  "spots": [
     {
-        "spots":[
-            
-        ]
+      "id": 1,
+      "name": "Usamah Hospital",
+      "addres": "Ds Abdullah No 31 DKI Jakarta",
+      "serve": 1,
+      "capacity": 19,
+      "available_vaccines": {
+        "sinovac": true,
+        "astrazeneca": true,
+        "moderna": false,
+        "pfizer": false,
+        "sinnopharm": true
+      }
+    },
+    {
+      "id": 2,
+      "name": "Nasyidah Hospital",
+      "addres": "Ds Abdullah No 31 DKI Jakarta",
+      "serve": 2,
+      "capacity": 19,
+      "available_vaccines": {
+        "sinovac": true,
+        "astrazeneca": false,
+        "moderna": false,
+        "pfizer": true,
+        "sinnopharm": true
+      }
+    },
+    {
+      "id": 3,
+      "name": "Napitupulu Hospital",
+      "addres": "Jln Laswi No 228 DKI Jakarta",
+      "serve": 3,
+      "capacity": 19,
+      "available_vaccines": {
+        "sinovac": false,
+        "astrazeneca": true,
+        "moderna": true,
+        "pfizer": false,
+        "sinnopharm": true
+      }
     }
-]
+  ],
+  "spots_detail": [
+    {
+      "date": "Octoer 21,2021",
+      "spot": {
+        "id": 1,
+        "name": "Usamah Hospital",
+        "addres": "Ds Abdullah No 31 DKI Jakarta",
+        "serve": 1,
+        "capacity": 19,
+        "vaccinations_count": 5
+      }
+    },
+    {
+      "date": "Octoer 21,2021",
+      "spot": {
+        "id": 3,
+        "name": "Nasyidah Hospital",
+        "addres": "Ds Abdullah No 31 DKI Jakarta",
+        "serve": 2,
+        "capacity": 12,
+        "vaccinations_count": 5
+      }
+    },
+    {
+      "date": "Octoer 21,2021",
+      "spot": {
+        "id": 2,
+        "name": "Nasyidah Hospital",
+        "addres": "Ds Abdullah No 31 DKI Jakarta",
+        "serve": 2,
+        "capacity": 14,
+        "vaccinations_count": 19
+      }
+    }
+  ],
+  "consultation": {
+    "id": 1,
+    "status": "accepted",
+    "disease_history": "Diabetes",
+    "current_syptoms": "Flu",
+    "doctor_notes": "ok",
+    "doctor": {
+      "id": 1,
+      "name": "Dr Ratna Pradipta"
+    }
+  },
+  "vaccinations": {
+    "first": {
+      "queue": 1,
+      "dose": 1,
+      "vaccination_date": "2021-10-21",
+      "spot": {
+        "id": 1,
+        "name": "Napitupulu Hospital",
+        "addres": "Ds Abdullah No 31 DKI Jakarta",
+        "serve": 1,
+        "capacity": 19,
+        "regional": {
+          "id": 1,
+          "province": "DKI Jakarta",
+          "district": "Central Jakarta"
+        }
+      },
+      "status": "done",
+      "vaccine": { "id": 1, "name": "sinovac" },
+      "vaccinator": { "id": 1, "role": "doctor", "name": "Dr. Halima Yuniar" }
+    }
+  }
+}

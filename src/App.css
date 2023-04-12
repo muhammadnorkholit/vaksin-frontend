@@ -1,6 +1,10 @@
-.login-card{
-  width: clamp(360px,10vw,600px);
+.login-card {
+  width: clamp(500px, 10vw, 500px);
 }
-section{
+section {
   padding: 2rem 0;
+}
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
 }
